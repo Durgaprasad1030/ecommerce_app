@@ -1,0 +1,121 @@
+/* --- Tablet (600px - 992px) --- */
+@media (min-width: 600px) {
+  .top-bar {
+    gap: 3rem;
+  }
+  .top-bar span {
+    display: block; /* Show all top-bar items */
+  }
+
+  .main-nav {
+    padding: 1rem 2rem;
+  }
+  .nav-right {
+    gap: 1rem;
+  }
+  .nav-right .icon-btn:nth-child(n+2), /* Show most icons */
+  .nav-right .lang-select {
+    display: block;
+  }
+  .nav-right .icon-btn:nth-child(4) {
+     display: none; /* Keep user icon hidden */
+  }
+
+  .hamburger-btn {
+    display: none; /* Hide hamburger */
+  }
+  .bottom-nav {
+    display: block; /* Show bottom-nav */
+    border-top: none;
+  }
+  .nav-links {
+    flex-direction: row; /* Horizontal links */
+    justify-content: center;
+    padding: 0.5rem 0;
+  }
+  .nav-links li a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .home-container {
+    padding: 1.5rem 2rem;
+  }
+  .page-header h1 {
+    font-size: 2.5rem;
+  }
+  .filter-toggle {
+    display: block; /* Show filter toggle */
+  }
+
+  .main-content {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .filters-sidebar {
+    display: block; /* Show filters sidebar */
+    width: 280px;
+    flex-shrink: 0;
+  }
+  .product-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+
+  .footer-main {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .footer-links {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  .footer-column.subscribe {
+    max-width: 350px;
+  }
+  .footer-column.contact {
+    text-align: right;
+  }
+  .footer-column.contact .currency-info {
+    justify-content: flex-end;
+  }
+  .footer-column {
+    width: 33%;
+  }
+  .footer-column:last-child {
+    flex-grow: 1;
+  }
+
+}
+
+/* --- Desktop (992px+) --- */
+@media (min-width: 992px) {
+  .main-nav {
+    padding: 1.5rem 3rem;
+  }
+  .nav-right .icon-btn {
+    display: block; /* Show all icons */
+  }
+  .nav-right {
+    gap: 1.5rem;
+  }
+  .nav-links li a {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .home-container {
+    padding: 2rem 3rem;
+  }
+  .product-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+/* --- Large Desktop (1400px+) --- */
+@media (min-width: 1400px) {
+  .product-list {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  }
+}
